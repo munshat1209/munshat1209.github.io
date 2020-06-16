@@ -27,13 +27,13 @@ body {
 .wrapper {
     margin: 0 auto;
     width: 100%;
-    padding: 2rem;
 }
 
 /* Rezied the logo image at the top of the page*/
-img {
+div.logo img {
     max-width: 40%;
     height: auto;
+    padding: 2rem;
 }
 
 /* Headings of the Landing page*/
@@ -43,24 +43,25 @@ h1 {
     margin-top: 1.5rem;
     color: #333131;
     line-height: 5.5rem;
-    padding: 1rem;
+    padding: 2.5rem;
 }
 
 h2 {
     font-family: Montserrat-Thin;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
     color: #333131;
-    margin-top: -2.5rem;
-    padding: 1rem;
+    margin-top: -8rem;
+    padding: 2.5rem;
 }
 
 /* Resized the scooter image to be adjusted on the mobile screen*/
 div.picture {
-    width: 1000px;
+    width: 90%;
     height: auto;
-    margin-top: -1.6rem;
+    margin-top: -4.5rem;
+    padding: 1rem;
 }
 
 /* Created the 'Apply Now' form with specific details*/
@@ -69,26 +70,26 @@ div.picture {
     width: 75%;
     border-radius: 30px;
     box-shadow: 5px 10px 18px rgb(133, 132, 132);
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 1.5rem;
     font-family: Montserrat-Thin;
     font-size: 1.1rem;
     color: #333131;
     font-weight: bold;
+    margin-left: 2.5rem;
 }
 
 /* Both headings of the form */
 .form h1 {
-    font-size: 3.1rem;
-    text-align: left;
-    margin-top: -2.5rem;
+    font-size: 2.7rem;
+    margin-top: -3rem;
 }
 
 h3 {
     font-family: Montserrat-Thin;
     font-size: 1.2rem;
-    margin-top: -3rem;
-    margin-left: 0.7rem;
+    margin-top: -5rem;
+    margin-left: 2rem;
 }
 
 /* Used boxes to create a form by using flexbox*/
@@ -148,7 +149,6 @@ button[type=button] {
 .statement {
     margin-left: 0.7rem;
     margin-top: -2rem;
-    margin-bottom: -1rem;
 }
 .answer {
     color: #ff8480;
@@ -157,9 +157,7 @@ button[type=button] {
 /*Footer section */
 footer {
     background-color: #fffd8c;
-    width: 95%;
-    padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 /*Headings of the footer section*/
@@ -242,46 +240,45 @@ footer h3 {
 
 /*****************************TABLET VIEW *************************/
 @media only screen and (min-width: 600px) {
-    .wrapper {
-        padding: 5rem;
-    }
 
     /* Resized the logo along with the tablet screen*/
-    img {
+    div.logo img {
         max-width: 15%;
         height: auto;
     }
 
     /* Adjusted the alignment of the headings*/
     h1 {
-        padding-right: 12rem;
-        margin-top: -0.5rem;
+        margin-top: -4rem;
         line-height: 5.9rem;
     }
 
     h2 {
         font-size: 1.55rem;
-        padding-right: 12rem;
         line-height: 2rem;
-        margin-top: -4rem;
+        margin-top: -7rem;
     }
 
     /* Increased the size of scooter image in the middle of the page*/
     div.picture {
-        width: 370%;
+        width: 55%;
         height: auto;
-        margin-left: 6rem;
-        margin-top: -3.5rem;
+        margin-left: 8rem;
+        margin-top: -6rem;
     }
 
     /* Fixed the texts and alignment of each box of the form */
+    .form {
+        margin-left: 4rem;
+    }
+
     .form h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     h3 {
-        font-size: 2rem;
-        margin-top: -3.5rem;
+        font-size: 1.7rem;
+        margin-top: -5rem;
     }
 
     .boxes {
@@ -290,17 +287,17 @@ footer h3 {
     }
 
     button[type=button] {
-        width: 96%;
+        width: 95%;
     }
 
     .statement {
         text-align: center;
+        font-size: 1rem;
     }
 
     /* Decreased the font sizes to adject along with footer section*/
     footer {
-        width: 100%;
-        margin-top: 3rem;
+        margin-top: 5rem;
         padding: 2.5rem;
         padding-bottom: 10rem;
     }
@@ -320,18 +317,18 @@ footer h3 {
         grid-template-columns: repeat(5 , 1fr);
         grid-template-areas: 
         "one two two three three";
-        grid-gap: 0px;
+        grid-gap: 20px;
     }
 
     /*Fixed the boxes to be in same size*/
     .block {
-        padding: 6px 0;
-        width: 75%;
+        padding: 7px 0;
     }
 
     .blocks .block:nth-child(1) {
-        text-align: left;
-        padding-left: 0.8rem;
+        text-align: right;
+        padding-right: 3rem;
+        padding-left: 1rem;
         margin-bottom: 4rem;
     }
 
@@ -341,56 +338,54 @@ footer h3 {
     }
 
     .blocks .block:nth-child(3) {
-        margin-left: -3.3rem;
+        margin-left: -0.5rem;
         margin-top: 0rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-bottom: 4rem;
         cursor: pointer;
     }
 
     /* Adjusted icons to be aligned with the section of the footer*/
     .media-tags {
-        margin-left: 9rem;
-        margin-top: -11rem;
+        margin-left: 7rem;
+        margin-top: -9rem;
         width: 300px;
         height: auto;
-    }
-
-    
+    }  
 }
 
 /*************************DESKTOP VIEW*****************************/
 @media only screen and (min-width: 850px) {
-    .wrapper {
-        padding: 6rem;
-    }
 
     /*Resized the logo to adjust along with desktop screen*/
-    img {
-        max-width: 8%;
+    div.logo img {
+        max-width: 12%;
         height: auto;
-        margin-top: -5rem;
+        padding: 4rem;
     }
     /*Headings are decreased and aligned */
     h1 {
-        font-size: 4rem;
-        padding-right: 60rem;
-        line-height: 4.8rem;
-        margin-top: 3rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        padding: 4rem;
+        padding-right: 48rem;
+        margin-bottom: -2rem;
     }
 
     h2 {
-        font-size: 1.25rem;
-        padding-right: 58rem;
+        font-size: 1.3rem;
         line-height: 1.7rem;
+        padding: 4rem;
+
+
     }
 
     /* Increased the scooter image and set it at back of the form */
     div.picture {
-        width: 560%;
+        width: 40%;
         height: auto;
-        margin-left: 21.8rem;
-        margin-top: -15.5rem;
+        margin-left: 24rem;
+        margin-top: -21.1rem;
         position: absolute;
         z-index: -1;
     }
@@ -398,21 +393,22 @@ footer h3 {
     /* Resized the form and fixed the details*/
     .form {
         width: 25%;
-        margin-left: 55rem;
+        margin-left: 56rem;
         margin-top: -20.5rem;
         font-size: 1rem;
     }
 
     .form h1 {
         font-size: 2rem;
-        text-align: left;
         padding: 0.5rem;
         margin-top: -0.5rem;
+        margin-left: 0.6rem;
     }
 
     h3 {
         font-size: 1.2rem;
-        margin-top: -2.2rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
 
     .boxes {
@@ -432,19 +428,16 @@ footer h3 {
     .statement {
         text-align: center;
         font-size: 0.7rem;
-        margin-top: -0.1rem;
     }
 
     /* Decreased the font sizes to adject along with footer section*/
     footer {
-        margin-top: 1rem;
-        padding: 4rem;
-        padding-bottom: 15rem;
+        margin-top: 4rem;
+        padding-bottom: 5rem;
     }
     
     footer h1 {
         font-size: 1rem;
-        margin-top: -3.5rem;
     }
     
     footer h3 {
@@ -453,15 +446,20 @@ footer h3 {
 
     /*Aligned all blocks in one row at left corner of the footer section*/
     .block {
-        width: 48%;
+        width: 25%;
     }
 
     .blocks .block:nth-child(2) {
-        margin-left: -6.7rem;
+        margin-left: -7rem;
+        padding-right: 5rem;
     }
 
     .blocks .block:nth-child(3) {
-        margin-left: -21.9rem;
+        margin-left: -24rem;
+        font-size: 1.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
     }
 
     /*Used flex to shift at the left corner of the footer section*/
@@ -469,7 +467,7 @@ footer h3 {
         display: flex;
         margin-left: 60rem;
         justify-content: space-evenly;
-        margin-top: -13rem;
+        margin-top: -15.5rem;
     }    
 }
 
