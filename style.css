@@ -1,0 +1,494 @@
+/* Imported four same fonts but with different font-weights from the folder*/ 
+@font-face {
+    src: url(fonts/Montserrat-Bold.ttf);
+    font-family: Montserrat;
+}
+
+@font-face {
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-family: Montserrat-Regular;
+}
+
+@font-face {
+    src: url(fonts/Montserrat-Thin.ttf);
+    font-family: Montserrat-Thin;
+}
+
+@font-face {
+    src: url(fonts/Montserrat-Light.ttf);
+    font-family: Montserrat-Light;
+}
+
+/********************MOBILE VIEW********************/
+body {
+    background-color: #f7f7ff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Rezied the logo image at the top of the page*/
+img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Headings of the Landing page*/
+h1 {
+    font-family: Montserrat;
+    font-size: 5rem;
+    margin-top: 1.5rem;
+    color: #333131;
+    line-height: 5.5rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: Montserrat-Thin;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #333131;
+    margin-top: -2.5rem;
+    padding: 1rem;
+}
+
+/* Resized the scooter image to be adjusted on the mobile screen*/
+div.picture {
+    width: 1000px;
+    height: auto;
+    margin-top: -1.6rem;
+}
+
+/* Created the 'Apply Now' form with specific details*/
+.form {
+    background-color: white;
+    width: 75%;
+    border-radius: 30px;
+    box-shadow: 5px 10px 18px rgb(133, 132, 132);
+    padding: 2rem;
+    margin-top: 1.5rem;
+    font-family: Montserrat-Thin;
+    font-size: 1.1rem;
+    color: #333131;
+    font-weight: bold;
+}
+
+/* Both headings of the form */
+.form h1 {
+    font-size: 3.1rem;
+    text-align: left;
+    margin-top: -2.5rem;
+}
+
+h3 {
+    font-family: Montserrat-Thin;
+    font-size: 1.2rem;
+    margin-top: -3rem;
+    margin-left: 0.7rem;
+}
+
+/* Used boxes to create a form by using flexbox*/
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: column;
+}
+
+/*Created each box with specific details*/
+.box {
+    min-width: 2em;
+    min-height: 2.5em;
+    margin: 10px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+
+input[type=text] {
+    width: 95%;
+    font-family: Montserrat-Thin;
+    font-size: 1.1rem;
+    color: #333131;
+    font-weight: bold;
+    border: none;
+    background-color: #f3f3f3;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* Increased the size of the checkbox */
+input.agree {
+    width: 25px;
+    height: 25px;
+    margin-top: 0.5rem;
+    margin-left: 0.75rem;
+    cursor: pointer;
+}
+
+/* Increased the button size along with texts inside*/
+button[type=button] {
+    width: 93%;
+    font-family: Montserrat;
+    font-size: 1.7em;
+    color: #333131;
+    background-color: #57eeab;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-top: 0.6rem;
+    margin-left: 0.7rem;
+}
+
+/* Fixed the sentence in aligning and changed the colour of half sentence to red*/
+.statement {
+    margin-left: 0.7rem;
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+}
+.answer {
+    color: #ff8480;
+}
+
+/*Footer section */
+footer {
+    background-color: #fffd8c;
+    width: 95%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/*Headings of the footer section*/
+footer h1 {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    padding: 2rem;
+    margin-top: -2rem;
+}
+
+footer h3 {
+    font-size: 1.3rem;
+    padding: 2rem;
+    margin-top: -4rem;
+    margin-left: -0.01rem;
+}
+
+/* Created footer form by using gird*/
+.blocks {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "one two two"
+    "three three three";
+    padding: 2rem;
+    margin-top: -4rem;
+}
+
+.block {
+    background-color: #f7f7ff;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+/* Individual block was used by grid area and was adjusted along the form*/
+.blocks .block:nth-child(1) {
+    grid-area: one;
+    text-align: center;
+    font-family: Montserrat-Regular;
+    font-size: 1.1rem;
+    color: #8b8b8b;
+    margin-bottom: 2rem;
+}
+
+.blocks .block:nth-child(2) {
+    grid-area: two;
+    text-align: left;
+    font-family: Montserrat-Regular;
+    font-size: 1.1rem;
+    color: #8b8b8b;
+    padding-left: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.blocks .block:nth-child(3) {
+    grid-area: three;
+    background-color: #ff8480;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.7rem;
+    color: white;
+    margin-top: -2rem;
+    margin-bottom: 3.5rem;
+}
+
+/* Flex was used on Social icons to resized and aligned with the form*/
+.media-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3.7rem;
+    margin-top: -3rem;
+    width: 300px;
+    height: auto;
+}
+
+
+
+/*****************************TABLET VIEW *************************/
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        padding: 5rem;
+    }
+
+    /* Resized the logo along with the tablet screen*/
+    img {
+        max-width: 15%;
+        height: auto;
+    }
+
+    /* Adjusted the alignment of the headings*/
+    h1 {
+        padding-right: 12rem;
+        margin-top: -0.5rem;
+        line-height: 5.9rem;
+    }
+
+    h2 {
+        font-size: 1.55rem;
+        padding-right: 12rem;
+        line-height: 2rem;
+        margin-top: -4rem;
+    }
+
+    /* Increased the size of scooter image in the middle of the page*/
+    div.picture {
+        width: 370%;
+        height: auto;
+        margin-left: 6rem;
+        margin-top: -3.5rem;
+    }
+
+    /* Fixed the texts and alignment of each box of the form */
+    .form h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-top: -3.5rem;
+    }
+
+    .boxes {
+        margin-top: -2rem;
+        padding: 0.5rem;
+    }
+
+    button[type=button] {
+        width: 96%;
+    }
+
+    .statement {
+        text-align: center;
+    }
+
+    /* Decreased the font sizes to adject along with footer section*/
+    footer {
+        width: 100%;
+        margin-top: 3rem;
+        padding: 2.5rem;
+        padding-bottom: 10rem;
+    }
+
+    footer h1 {
+        font-size: 1.3rem;
+        margin-top: -3rem;
+    }
+
+    footer h3 {
+        font-size: 1.15rem;
+    }
+
+    /* Used grids to label boxes into one column*/
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(5 , 1fr);
+        grid-template-areas: 
+        "one two two three three";
+        grid-gap: 0px;
+    }
+
+    /*Fixed the boxes to be in same size*/
+    .block {
+        padding: 6px 0;
+        width: 75%;
+    }
+
+    .blocks .block:nth-child(1) {
+        text-align: left;
+        padding-left: 0.8rem;
+        margin-bottom: 4rem;
+    }
+
+    .blocks .block:nth-child(2) {
+        margin-bottom: 4rem;
+        margin-left: -0.5rem;
+    }
+
+    .blocks .block:nth-child(3) {
+        margin-left: -3.3rem;
+        margin-top: 0rem;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+        cursor: pointer;
+    }
+
+    /* Adjusted icons to be aligned with the section of the footer*/
+    .media-tags {
+        margin-left: 9rem;
+        margin-top: -11rem;
+        width: 300px;
+        height: auto;
+    }
+
+    
+}
+
+/*************************DESKTOP VIEW*****************************/
+@media only screen and (min-width: 850px) {
+    .wrapper {
+        padding: 6rem;
+    }
+
+    /*Resized the logo to adjust along with desktop screen*/
+    img {
+        max-width: 8%;
+        height: auto;
+        margin-top: -5rem;
+    }
+    /*Headings are decreased and aligned */
+    h1 {
+        font-size: 4rem;
+        padding-right: 60rem;
+        line-height: 4.8rem;
+        margin-top: 3rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        padding-right: 58rem;
+        line-height: 1.7rem;
+    }
+
+    /* Increased the scooter image and set it at back of the form */
+    div.picture {
+        width: 560%;
+        height: auto;
+        margin-left: 21.8rem;
+        margin-top: -15.5rem;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /* Resized the form and fixed the details*/
+    .form {
+        width: 25%;
+        margin-left: 55rem;
+        margin-top: -20.5rem;
+        font-size: 1rem;
+    }
+
+    .form h1 {
+        font-size: 2rem;
+        text-align: left;
+        padding: 0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-top: -2.2rem;
+    }
+
+    .boxes {
+        margin-top: -1rem;
+    }
+
+    .box {
+        margin: 5px;
+    }
+
+    input[type=text] {
+        width: 85%;
+        font-size: 0.9rem;
+        margin-top: 0.7rem;
+    }
+     
+    .statement {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-top: -0.1rem;
+    }
+
+    /* Decreased the font sizes to adject along with footer section*/
+    footer {
+        margin-top: 1rem;
+        padding: 4rem;
+        padding-bottom: 15rem;
+    }
+    
+    footer h1 {
+        font-size: 1rem;
+        margin-top: -3.5rem;
+    }
+    
+    footer h3 {
+        font-size: 0.9rem;
+    }
+
+    /*Aligned all blocks in one row at left corner of the footer section*/
+    .block {
+        width: 48%;
+    }
+
+    .blocks .block:nth-child(2) {
+        margin-left: -6.7rem;
+    }
+
+    .blocks .block:nth-child(3) {
+        margin-left: -21.9rem;
+    }
+
+    /*Used flex to shift at the left corner of the footer section*/
+    .media-tags {
+        display: flex;
+        margin-left: 60rem;
+        justify-content: space-evenly;
+        margin-top: -13rem;
+    }    
+}
+
+  
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
