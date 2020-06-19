@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture This!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="title">
+      <h1>Picture This!</h1>
+      <h4>My Really Cool Blog Post</h4>
+    </div>
+    <picture>
+      <source secset="images/museum-320_x_180.jpg,
+        images/museum-640_x_360.jpg 2x,
+        images/museum-960_x_540.jpg 3x, media=" media="(max-width:320px)">
+      <source secset="images/museum-480_x_269.jpg,
+        images/museum-960_x_540.jpg 2x,
+        images/museum-1440_x_810.jpg 3x, media=" media="(max-width:480px)">
+      <source secset="images/museum-720_x_405.jpg,
+        images/museum-1440_x_810.jpg 2x,
+        images/museum-2160_x_1215.jpg 3x, media=" media="(max-width:720px)">
+      <source secset="images/museum-960_x_540.jpg,
+        images/museum-1920_x_1080.jpg 2x,
+        images/museum-2880_x_1621.jpg 3x, media=" media="(max-width: 960px)">
+
+      <source secset="images/museum-800_x_800.jpg,
+        images/museum-1600_x_1600.jpg 2x,
+        images/museum-2400_x_2400.jpg 3x, media=" media="(max-width:1600px)">
+      <source secset="images/museum-640_x_640.jpg,
+        images/museum-1280_x_1280.jpg 2x,
+        images/museum-1920_x_1920.jpg 3x, media=" media="(max-width:1280px)">
+      <source secset="images/museum-480_x_480.jpg,
+        images/museum-960_x_960.jpg 2x,
+        images/museum-1440_x_1440.jpg 3x, media=" media="(max-width:960px)">
+      <img src="images/museum-480_x_269.jpg" alt="placeholder">
+    </picture>
+    
+    <!-- <img 
+      src="images/museum.jpg" alt="placeholder"
+      srcset="https://via.placeholder.com/320x180 320w,
+              https://via.placeholder.com/480x269 480w,
+              https://via.placeholder.com/720x405 720w,
+              https://via.placeholder.com/960x520 960w,"
+      sizes="(min-width: 960px) 50vw, 100vw"> 
+
+
+  </header>
+</body>
+
+</html>
