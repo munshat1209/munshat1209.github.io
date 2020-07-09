@@ -1,0 +1,1078 @@
+/* IMPORTED FONT-FAMILYS FROM ORIGINAL FILE */
+@font-face {
+    src: url(fonts/Rajdhani-Bold.ttf);
+    font-family: Rajdhani-Bold;
+}
+
+@font-face {
+    src: url(fonts/Catamaran-SemiBold.ttf);
+    font-family: Catamaran-SemiBold;
+}
+
+@font-face {
+    src: url(fonts/Rajdhani-SemiBold.ttf);
+    font-family: Rajdhani-SemiBold;
+}
+
+@font-face {
+    src: url(fonts/Catamaran-Regular.ttf);
+    font-family: Catamaran-Regular;
+}
+
+/* ROTATION OF THE OBJECT ANIMATION USED */
+@keyframes rotation{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/**************************** MOBILE VIEW *****************************/
+/**************************** HOME ************************************/
+/* ADDED THE ROTATION ANIMATION ON THE LOGO */
+.logo img {
+    max-width: 100px;
+    height: auto;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* ADJUSTED LOGO TO MATCH WITH NAVIGATION MENU*/
+.logo {
+    background-color: #160C28;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+/* NAVIGATION AND CLINKABLE LINKS FEATURES*/
+nav ul {
+    list-style-type: none;
+    border-bottom: 2px solid #E7ECEF;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: Rajdhani-Bold;
+    color: #E7ECEF;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px 8px; 
+    border-top: 2px solid #E7ECEF;
+    background-color: #160C28;
+    width: 100%;
+}
+
+nav a:link,
+nav a:visited {
+    color: #E7ECEF;
+}
+
+nav a:hover,
+nav a:active,
+nav a.current-page {
+    color: #A7C957;
+}
+
+/* BLURED THE BACKGROUND PICTURE */
+.bg-picture img{
+    max-width: 100%;
+    height: auto;
+    filter: blur(2px);
+    position: relative;
+}
+
+/* HEADINGS AND BUTTON POSITIONED ON TOP OF THE PICTURE*/
+.heading-1 {
+    position: absolute;
+    top: 53%;
+    left: 42%;
+    transform: translate(-36%, -50%);
+    font-family: Rajdhani-Bold;
+    color: #0D5D56;
+    font-size: 1.8rem;  
+}
+
+.heading-2 {
+    position: absolute;
+    top: 58%;
+    left: 14%;
+    font-family: Catamaran-SemiBold;
+    color: #0D5D56;
+    font-size: 1.2rem;
+}
+
+.bg-picture .button {
+    background-color: #A7C957;
+    border: 1px solid #160C28;
+    border-radius: 8px;
+    font-family: Rajdhani-SemiBold;
+    color: #E7ECEF;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 65%;
+    left: 37.5%;
+    padding: 7px 17px;
+    cursor: pointer;
+    box-shadow: 1px 6px 10px grey;
+}
+
+/* COVID-19 SECTION AND ITS FEATURES */
+.covid-19 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.covid-19 {
+    background-color: #f7f7ff;
+}
+
+.covid-19 h1 {
+    font-family: Catamaran-SemiBold;
+    font-size: 1.2rem;
+    color: #0D5D56;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.covid-19 p {
+    font-family: Catamaran-Regular;
+    font-size: 0.9rem;
+    color: #0D5D56;
+    padding: 1.5rem;
+    margin-left: 1.5rem;
+    line-height: 1.7rem;
+}
+
+/* CONTAINER SECTION AND CHANGES MADE*/
+.container h1 {
+    font-family: Catamaran-SemiBold;
+    color: #0D5D56;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* USED GRID FOR THE IMAGES TO BE IN ONE COLUMN */
+.items {
+    display: grid;
+}
+
+.items .column img {
+    width: 250px;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* USED FLEX TO CENTER IMAGES IN ONE COLUMN */
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h3 {
+    font-family: Catamaran-Regular;
+    color: #0D5D56;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.btn .button {
+    background-color: #A7C957;
+    border: 1px solid #160C28;
+    border-radius: 8px;
+    font-family: Rajdhani-SemiBold;
+    color: #E7ECEF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 7px 17px;
+    cursor: pointer;
+    box-shadow: 1px 6px 10px grey;
+    margin-left: 11.5rem;
+    margin-top: 1rem;
+}
+
+.container p {
+    font-family: Catamaran-Regular;
+    font-size: 0.9rem;
+    color: #0D5D56;
+    padding: 1.5rem;
+    margin-left: 1rem;
+    line-height: 1.7rem;
+}
+
+/* FOOTER AND TEXTS FEATURES */
+footer {
+    background-color: #160C28;
+}
+
+footer h1 {
+    font-family: Rajdhani-Bold;
+    color: #E7ECEF;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* USED FLEX FOR SOCIAL MEDIA ICONS TO BE IN ONE ROW */
+.media-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.media-tags img {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+/* 'BACK TO TOP' LINK FEATURES */
+footer a {
+    font-family: Rajdhani-Bold;
+    color: #A7C957;
+    text-decoration: none;
+    position: relative;
+    left: 370px;
+    bottom: 10px;
+}
+
+/* HOVER ON 'BACK TO TOP' WHEN CLICKED */
+footer a:hover {
+    color: #E7ECEF;
+}
+
+/*********************************ABOUT******************************/
+@keyframes slidein {
+    from {
+        margin-left: 33%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* WRAPPER1 SECTION AND ITS ADJUSTMENT MADE*/
+.wrapper1 {
+    background-color: #f7f7ff;
+    margin-top: -1.5rem;
+    z-index: -1;
+}
+
+.wrapper1 h1 {
+    font-family: Rajdhani-Bold;
+    color: #0D5D56;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.wrapper1 p {
+    font-family: Catamaran-Regular;
+    color: #0D5D56;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    padding: 2rem;
+    margin-left: 1.5rem;
+    margin-top: -3rem;
+}
+
+.texts2 .button {
+    background-color: #A7C957;
+    border: 1px solid #160C28;
+    border-radius: 8px;
+    font-family: Rajdhani-SemiBold;
+    color: #E7ECEF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 7px 17px;
+    cursor: pointer;
+    box-shadow: 1px 6px 10px grey;
+    width: 25%;
+    margin-left: 11.5rem;
+}
+
+/* SLIDE-IN/OUT ANIMATION USED ON THE 'PEOPLE' IMAGE*/
+.wrapper1 img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 2rem;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+    transition: 1s 0.5s;
+}
+
+/* HOVER EFFECT ADDED ON THE 'PEOPLE' IMAGE*/
+.wrapper1 img:hover {
+    opacity: 0.1;
+    transition: 0.3s;
+}
+
+/* IMAGES ARE NOT DISPLAYED IN THE MOBILE VIEW */
+.about_section .about img {
+    display: none;
+}
+
+.about_section .about h1 {
+    font-family: Catamaran-SemiBold;
+    color: #0D5D56;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.about_section .about p {
+    font-family: Catamaran-Regular;
+    color: #0D5D56;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* GAVE BACKGROUND COLOR TO ALTERNATE PARTS OF ABOUT SECTION*/
+.about_section .about:nth-child(2),
+.about_section .about:nth-child(5),
+.about_section .about:nth-child(7)  {
+    background-color: #f7f7ff;
+    padding: 1rem;
+}
+
+.about_section {
+    margin-bottom: -2rem;
+}
+
+/* SECTION BETWEEN THE PAGE WITH BUTTON*/
+.break {
+    background-color: #160C28;
+    padding: 1.5rem;
+}
+
+.break h1{
+    font-family: Rajdhani-Bold;
+    color: #E7ECEF;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.break .button {
+    background-color: #A7C957;
+    border: 1px solid #160C28;
+    border-radius: 8px;
+    font-family: Rajdhani-SemiBold;
+    color: #E7ECEF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 7px 17px;
+    cursor: pointer;
+    box-shadow: 1px 6px 10px grey;
+    margin-left: 9.9rem;
+}
+
+/*********************************CONTACT*****************************/
+@keyframes jump {
+    10%, 25% {
+      transform: translateY(100px) scale(1.5);
+     }
+}
+
+.wrapper2 h1 {
+    font-family: Rajdhani-Bold;
+    color: #0D5D56;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* CONTACT FORM AND ITS PROPERTIES*/
+.container1 {
+    background-color: #0D5D56;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 70%;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    font-family: Rajdhani-Bold;
+    color: #f7f7ff;
+    margin-left: 3rem;
+}
+
+/* CHANGES MADE IN EACH INPUT */
+input[type=text] {
+    width: 90%;
+    padding: 0.5rem;
+    font-family: Catamaran-SemiBold;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type=tel] {
+    width: 90%;
+    padding: 0.5rem;
+    font-family: Catamaran-SemiBold;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea[name=message] {
+    width: 90%;
+    padding: 0.5rem;
+    font-family: Catamaran-SemiBold;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type=submit] {
+    width: 40%;
+    padding: 4px 3px;
+    font-family: Rajdhani-SemiBold;
+    border: 1px solid #160C28;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: #A7C957;
+    color: #f7f7ff;
+    cursor: pointer;
+    margin-left: 10.5rem;
+}
+
+/* NEXT SECTION AND ITS CHANGES*/
+.next p {
+    font-family: Catamaran-Regular;
+    color: #0D5D56;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 2rem;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.next .button {
+    background-color: #A7C957;
+    border: 1px solid #160C28;
+    border-radius: 8px;
+    font-family: Rajdhani-SemiBold;
+    color: #E7ECEF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 7px 17px;
+    cursor: pointer;
+    box-shadow: 1px 6px 10px grey;
+    margin-left: 11rem;
+}
+
+/* JUMP ANIMATION ADDED ON THE 'SEAL' IMAGE*/
+.seal img {
+    max-width: 150px;
+    height: auto;
+    padding: 2rem;
+    margin-left: 8rem;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    transition: 1s 0.5s;
+}
+
+/* LOCATION AND IT'S ADJUSTMENTS*/
+.location h1 {
+    font-family: Rajdhani-Bold;
+    color: #0D5D56;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 8rem;
+}
+
+/* GOOGLE MAP LOCATION SIZE */
+iframe {
+    width: 100%;
+}
+
+.location p {
+    font-family: Catamaran-Regular;
+    color: #0D5D56;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 2rem;
+    text-align: left;
+}
+
+/*********************************TABLET VIEW*************************/
+@media only screen and (min-width: 600px) {
+    /*****************************HOME*********************************/
+    /* LOGO IMAGE AT TOP LEFT CORNER*/
+    .logo img {
+        max-width: 35px;
+        height: auto;
+        position: absolute;
+        left: 16px;
+        margin-top: -0.5rem;
+        margin-left: 2rem;
+    }
+
+    .logo {
+        position: fixed;
+        top: 0; 
+    }
+
+    /* USED FLEX  FOR NAVIGATION BAR AT TOP-RIGHT OF THE PAGE*/
+    nav ul {
+        border: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        margin-right: 3rem;
+    }
+    
+    nav ul li a {
+        border: none;
+        display: block;
+        font-size: 0.95rem;   
+    }
+
+    /* BACKGROUND PICTURE ADJUSTMENTS WITH TEXTS AND BUTTON*/
+    .bg-picture img{
+        max-width: 100%;
+        height: auto;
+        filter: blur(2px);
+        margin-top: 3.1rem;
+        z-index: -1;
+    }
+
+    .heading-1 {
+        top: 28%;
+        left: 43%;
+        font-size: 2.8rem; 
+        z-index: -1; 
+    }
+    
+    .heading-2 {
+        top: 37%;
+        left: 19%;
+        font-size: 1.8rem;
+        z-index: -1;
+    }
+    
+    .bg-picture .button {
+        font-size: 1.2rem;
+        top: 47%;
+        left: 41.5%;
+        padding: 8px 20px;
+        z-index: -1;
+        cursor: pointer;
+    }
+
+    /* ADJUSTMENT MADE IN COVID-19 SECTION*/
+    .covid-19 img {
+        width: 80%;
+        height: auto;
+        margin-left: 4.5rem;
+    }
+    
+    .covid-19 p {
+        margin-top: -1rem;
+        margin-right: 2rem;
+    }
+
+    /* CONTAINER SECTION AND ITS CHANGES MADE */
+    .container h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* USED GRIDS TO MAKE TWO COLUMNS FOR THE IMAGES */
+    .items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .container .column img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    /* NTH-CHILD USED FOR ALIGNING IMAGES */
+    .column:nth-child(4) img {
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .column:nth-child(6) img {
+        margin-bottom: 10px ;
+    }
+
+    .container h3 {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+    }
+    
+    .btn .button {
+        font-size: 1.2rem;
+        padding: 8px 20px;
+        margin-left: 22rem;
+    }
+
+    /* FOOTER SECTION AND ITS CHANGES MADE*/
+    footer h1 {
+        font-size: 1.5rem;
+    }
+    
+    .media-tags img {
+        
+        padding: 0.5rem;
+        margin-top: -1rem;
+    }
+
+    footer a {
+        left: 85%;
+        bottom: 10px;
+    } 
+
+    /**************************************ABOUT*************************************/
+    @keyframes slidein {
+        from {
+            margin-left: 54%;
+            width: 100%;
+        }
+    
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+    /* WRAPPER1 SECTION AND ITS FEATURES*/
+    .wrapper1 h1 {
+        font-size: 2.2rem;
+        padding-top: 5rem;
+    }
+    
+    .wrapper1 img {
+        max-width: 350px;
+        height: auto;
+        animation-duration: 2.8s;
+    }
+    
+    .wrapper1 p {
+        font-size: 1.1rem;
+    }
+
+    .wrapper1 .button {
+        font-size: 1.2rem;
+        width: 18%;
+        margin-left: 22rem;
+    }
+
+    /* DISPLAYED IMAGES IN THE TABLET VIEW */
+    .about_section .about img {
+        display: block;
+        max-width: 200px;
+        height: 150px;
+        margin-top: 2rem;
+        padding: 2rem;
+        border-radius: 100px;
+    }
+
+    /* USED GRIDS FOR SECTION TO APPEAR IN ALTERNATE WAY */
+    .about_section {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .about_section .about h1 {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+    
+    .about_section .about p {
+        text-align: left;
+        margin-top: -1rem;
+    }
+    
+    /* SECTION BETWEEN THE PAGE WITH BUTTON*/
+    .break h1{
+        font-size: 1.8rem;
+    }
+    
+    .break .button {
+        font-size: 1.2rem;
+        padding: 8px 20px;
+        margin-left: 20rem;
+    }
+
+    /****************************************CONTACT********************************************/
+    .wrapper2 h1 {
+        font-size: 2.2rem;  
+    }
+
+    /* CONTACT FORM INCREASED AND CENTERED */
+    .container1 {
+        padding: 2rem;
+        width: 40%;
+        font-size: 1.5rem;
+        margin-left: 13.5rem;
+    }
+
+    .one_section {
+        margin-top: 80px;
+    }
+
+    /* USED FLEX FOR PARAGRAPH AND SEAL TO BE SIDE BY SIDE */
+    .next {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .next div {
+        width: 50%;
+    }
+
+    .next p{
+        font-size: 1rem;
+        margin-left: 2.5rem;
+    }
+    
+    .seal img {
+        max-width: 90px;
+        height: auto;
+        animation-duration: 2s;
+        position: absolute;
+        z-index: -1;
+        margin-top: 3rem;
+    }
+    
+    /* USED POSITION FOR BUTTON TO BE ABOVE THE SEAL */
+    .next .button {
+        top: 88%;
+        left: 45.5%;
+        z-index: -1;
+        font-size: 1.2rem;
+        position: absolute;
+    }
+
+    /* LOCATION SECTION AND ITS CHANGES*/
+    .location h1 {
+        font-family: Rajdhani-Bold;
+        color: #0D5D56;
+        text-align: center;
+        font-size: 2.2rem;
+        margin-top: 5rem;
+    }
+    
+    iframe {
+        width: 90%;
+        padding: 2rem;
+    }
+    
+    .location p {
+        font-family: Catamaran-Regular;
+        color: #0D5D56;
+        font-size: 1rem;
+        line-height: 1.7;
+        padding: 2rem;
+        text-align: left;
+    }
+}
+
+
+/**********************************DESKTOP VIEW*****************************/
+@media only screen and (min-width: 900px) {
+    /******************************HOME*************************************/
+    /*BG-PICTURE SECTION AND IT'S ADJUSTMENTS*/
+    .bg-picture img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .heading-1 {
+        top: 50%;
+        left: 44.5%;
+        font-size: 3.8rem;  
+    }
+    
+    .heading-2 {
+        top: 65%;
+        left: 26%;
+        font-size: 2.5rem;
+    }
+    
+    .bg-picture .button {
+        font-size: 1.5rem;
+        top: 88%;
+        left: 44.8%;
+        padding: 8px 20px;
+    }
+
+    /*COVID-19 SECTION AND ITS CHANGES MADE*/
+    .covid-19 img {
+        max-width: 460px;
+        height: auto;
+    }
+    
+    .covid-19 h1 {
+        font-size: 1.5rem;
+        margin-left: 2rem;           
+    }
+    
+    .covid-19 p {
+        font-size: 1.1rem;
+        margin-left: 0.5rem;
+        margin-right: 5rem;      
+    }
+
+    /* USED FLEX TO KEEP TEXTS BESIDE THE IMAGE*/
+    .covid-19 {
+        display: flex;
+        align-items: center;
+    }
+
+    /* ADJUSTED THE SHORT UNDERLINE*/
+    .container h1 {
+        font-size: 2.3rem;        
+    }
+
+    /* USED GRID TO MAKE 3 COLUMN OF THE IMAGES*/
+    .items {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        margin-top: 5rem;
+    }
+
+    /*CONTAINER SECTION AND ITS FEATURES*/
+    .container .column img {
+        max-width: 250px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    /* NTH-CHILD USED ON SPECIFIC COLUMN TO ALIGN ALONG OTHER COLUMNS*/
+    .column:nth-child(3) {
+        margin-top: 3.2rem;
+    }
+
+    .column:nth-child(5) {
+        margin-top: -1.3rem;
+    }
+
+    .column:nth-child(6) {
+        margin-top: -1.2rem;
+    }
+
+    .container h3 {
+        font-size: 1.3rem;
+        margin-left: -2.5rem;
+    }
+    
+    .btn .button {
+        font-size: 1.5rem;
+        margin-left: 42rem;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+        padding: 4rem;
+    }
+
+    /********************************************ABOUT************************************/  
+    /* USED FLEX FOR TEXTS AND IMAGE TO BE BESIDE EACHOTHER */
+    .wrapper1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .wrapper1 div {
+        width: 50%;
+    }
+
+    .wrapper1 h1 {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: left;
+        margin-left: 6rem;
+    }
+    
+    .wrapper1 img {
+        max-width: 550px;
+        height: auto;
+        animation: none;
+        margin-left: 1rem;
+    }
+    
+    .wrapper1 p {
+        font-size: 1.1rem;
+        margin-left: 6rem;
+        line-height: 2.3rem;
+    }
+
+    .texts2 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texts2 .button {
+        padding: 8px 15px;
+        font-size: 1.5rem;
+        width: 25%;
+        margin-left: 3rem;
+    }
+
+    /* ABOUT SECTION AND ITS ADJUSTMENTS */
+    .about_section .about img {
+        max-width: 230px;
+        height: auto;
+        margin-top: 1rem;
+        padding: 4rem;
+        border-radius: 140px;
+    }
+
+    .about_section .about h1 {
+        font-size: 1.8rem;
+        padding-left: 6rem;
+        margin-top: 5rem;
+    }
+    
+    .about_section .about p {
+        margin-top: -1rem;
+        font-size: 1.2rem;
+        padding-left: 6rem;
+    }
+
+    /* SECTION MADE BETWEEN THE PAGE */
+    .break h1{
+        font-size: 3rem;
+        text-align: center;
+        
+    }
+    
+    .break .button {
+        padding: 8px 20px;
+        font-size: 1.5rem;
+        margin-left: 40rem;
+        width: 15%;
+    }
+
+    /*****************************************CONTACT****************************************/
+    .wrapper2 h1 {
+        font-size: 2.9rem;  
+        text-align: left;
+        margin-left: 8rem;
+        margin-bottom: -3rem;
+    }
+    
+    /* USED FLOAT TO KEEP FORM AT RIGHT SIDE BESIDE TEXTS*/
+    .container1 {
+        width: 23%; 
+        float: right;
+        margin-right: 10rem; 
+        font-size: 1.7rem;
+        line-height: 3rem;    
+    }
+
+    /* SMALL CHANGES MADE IN INPUT */
+    input[type=text] {
+        padding: 0.7rem;
+    }
+    
+    input[type=tel] {
+        padding: 0.7rem;
+    }
+    
+    textarea[name=message] {
+        width: 87%;
+        padding: 1rem;
+    }
+    
+    input[type=submit] {
+        font-size: 1.7rem;
+    }
+
+    /*DISPLAYED BESIDE THE FORM*/
+    .next {
+        display: block;
+    }
+
+    .next p{
+        font-size: 1.15rem;
+        margin-left: 4rem;
+        padding: 4rem;
+    }
+    
+    .next .button {
+        top: 55%;
+        left: 8.5%;
+        z-index: -1;
+        padding: 8px 20px;
+        font-size: 1.5rem;
+    }
+
+    .seal img {
+        max-width: 180px;
+        height: auto;
+        padding-left: 10rem;
+    }
+
+    /*LOCATION SECTION AND ITS CHANGES MADE*/
+    .location h1 {
+        font-size: 2.8rem;
+        margin-top: 20rem;
+    }
+    
+    iframe {
+        width: 75%;
+        padding: 2rem;
+        margin-left: 9rem;
+    }
+    
+    .location p {
+        font-size: 1.15rem;
+        margin-left: 4rem;
+        padding: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
