@@ -45,7 +45,7 @@
 .logo {
     background-color: #160C28;
     text-align: center;
-    padding: 1rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
     width: 100%;
 }
@@ -68,7 +68,6 @@ nav ul li a {
     padding: 15px 8px; 
     border-top: 2px solid #E7ECEF;
     background-color: #160C28;
-    width: 100%;
 }
 
 nav a:link,
@@ -87,13 +86,16 @@ nav a.current-page {
     max-width: 100%;
     height: auto;
     filter: blur(2px);
+}
+
+.bg-picture {
     position: relative;
 }
 
 /* HEADINGS AND BUTTON POSITIONED ON TOP OF THE PICTURE*/
 .heading-1 {
     position: absolute;
-    top: 53%;
+    top: 30%;
     left: 42%;
     transform: translate(-36%, -50%);
     font-family: Rajdhani-Bold;
@@ -103,7 +105,7 @@ nav a.current-page {
 
 .heading-2 {
     position: absolute;
-    top: 58%;
+    top: 45%;
     left: 14%;
     font-family: Catamaran-SemiBold;
     color: #0D5D56;
@@ -557,29 +559,29 @@ iframe {
         height: auto;
         filter: blur(2px);
         margin-top: 3.1rem;
+    }
+
+    .bg-picture {
         z-index: -1;
     }
 
     .heading-1 {
-        top: 28%;
+        top: 40%;
         left: 43%;
         font-size: 2.8rem; 
-        z-index: -1; 
     }
     
     .heading-2 {
-        top: 37%;
+        top: 55%;
         left: 19%;
         font-size: 1.8rem;
-        z-index: -1;
     }
     
     .bg-picture .button {
         font-size: 1.2rem;
-        top: 47%;
+        top: 75%;
         left: 41.5%;
         padding: 8px 20px;
-        z-index: -1;
         cursor: pointer;
     }
 
@@ -748,6 +750,7 @@ iframe {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        position: relative;
     }
 
     .next div {
@@ -757,6 +760,8 @@ iframe {
     .next p{
         font-size: 1rem;
         margin-left: 2.5rem;
+        position: relative;
+        z-index: -1;
     }
     
     .seal img {
@@ -770,7 +775,7 @@ iframe {
     
     /* USED POSITION FOR BUTTON TO BE ABOVE THE SEAL */
     .next .button {
-        top: 88%;
+        top: 10%;
         left: 45.5%;
         z-index: -1;
         font-size: 1.2rem;
@@ -1027,7 +1032,7 @@ iframe {
     }
     
     .next .button {
-        top: 55%;
+        top: 90%;
         left: 8.5%;
         z-index: -1;
         padding: 8px 20px;
@@ -1038,6 +1043,7 @@ iframe {
         max-width: 180px;
         height: auto;
         padding-left: 10rem;
+        margin-top: -1rem;
     }
 
     /*LOCATION SECTION AND ITS CHANGES MADE*/
