@@ -13,6 +13,7 @@
     src: url(fonts/Catamaran-Thin.ttf);
     font-family: Catamaran-Thin;
 }
+
 /*****************************MOBILE VIEW**************************/
 /**********************HOME*********************/
 /*Smooth transition for back to top button*/
@@ -391,10 +392,29 @@ iframe {
 }
 
 /*******************MEDIA QUERIES********************/
-/*To make carousel-caption responsive*/
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 298px) {
     .carousel-caption {
-        bottom: 13%;
+        bottom: 4.5%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption button {
+        font-size: 0.6rem;
+        margin-top: 0rem;
+    }
+}
+
+/*To make carousel-caption responsive*/
+@media only screen and (min-width: 498px) {
+    .carousel-caption {
+        bottom: 6%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3rem;
     }
 }
 
