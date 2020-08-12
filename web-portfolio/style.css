@@ -1,0 +1,699 @@
+/*Font-styles used for all texts*/
+@font-face {
+    src: url(fonts/Catamaran-Bold.ttf);
+    font-family: Catamaran-Bold;
+}
+
+@font-face {
+    src: url(fonts/Satisfy-Regular.ttf);
+    font-family: Satisfy;
+}
+
+@font-face {
+    src: url(fonts/Catamaran-Thin.ttf);
+    font-family: Catamaran-Thin;
+}
+/*****************************MOBILE VIEW**************************/
+/**********************HOME*********************/
+/*Smooth transition for back to top button*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Navigation bar and its adjustments*/
+.navbar {
+    z-index: 1;
+}
+
+/*Resized the logo image*/
+.navbar-brand img {
+    max-width: 140px;
+    height: auto;
+}
+
+.navbar-nav {
+    font-family: Catamaran-Bold;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #FDEBF1;
+}
+
+/*Slideshow and its features*/
+#mySlideshow .carousel-item img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.carousel-caption {
+    bottom: 10%;
+}
+
+.carousel-caption h1 {
+    font-family: Satisfy;
+    color: #22162B;
+    background-color: #FDEBF1;
+    opacity: 0.9;
+}
+
+.carousel-caption button {
+    font-family: Catamaran-Bold;
+    font-size: 0.7rem;
+    background-color: #BF8697;
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px #22162B;
+    cursor: pointer;
+}
+
+/*Container section and its changes made*/
+.container h1 {
+    font-family: Satisfy;
+    text-align: center;
+}
+
+.container h2 {
+    font-family: Satisfy;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container p {
+    font-family: Catamaran-Thin;
+    padding: 2.5rem;
+    text-align: left;
+}
+
+.container section img {
+    max-width: 350px;
+    height: auto;
+}
+
+/*Footer and its features*/
+footer {
+    background-color: #BF8697;
+}
+
+/*Nav links are not displayed in mobile view*/
+footer nav {
+    display: none;
+}
+
+footer h3 {
+    font-family: Catamaran-Bold;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.f-logo img {
+    width: 170px;
+    height: auto;
+}
+
+/*Used flex for social media icons to be in one row*/
+.media-tags i {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+
+.media-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+/*Contact details are not displayed in mobile view*/
+.details {
+    display: none;
+}
+
+/*Back to top button in fixed position*/
+.top {
+    width: 50px;
+    height: 50px;
+    background-color: #EFCED8;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 3rem;
+    color: #22162B;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+/**********************PORTFOLIO************************/
+/*Container and its features*/
+.container button {
+    font-family: Catamaran-Bold;
+    font-size: 0.7rem;
+    background-color: #BF8697;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px #22162B;
+    cursor: pointer;
+}
+
+.container .caption p {
+    font-family: Satisfy;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+/*Hover effect add to thumbnails*/
+.thumbnail {
+    background-color: #FDEBF1;
+    opacity: 3;
+    transition: 0.7s 0.5s;
+}
+
+.thumbnail:hover {
+    opacity: 0.3;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/***********************SERVICES*************************/
+/*Hover effect on each image*/
+.overlay img {
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:hover img {
+    filter: brightness(40%);
+}
+
+.overlay-text h4 {
+    font-family: Satisfy;
+    color: white;
+    text-shadow: 2px 2px 4px #EFCED8;
+}
+
+/*Used flex to position text on images*/
+.overlay-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease; 
+}
+
+.overlay-text:hover {
+    display: flex;
+    cursor: pointer;
+}
+
+/*Wrapper and its changes*/
+.wrapper img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.wrapper h2 {
+    font-family: Satisfy;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.wrapper p {
+    font-family: Catamaran-Thin;
+    padding: 2.5rem;
+    text-align: left;
+}
+
+/*Hover effect on both the images*/
+.box img {
+    width: 70%;
+    height: auto;
+    opacity: 1;
+    transition: 0.5s ease; 
+}
+
+.inner-box {
+    position: relative;
+}
+
+.box:hover img {
+    filter: brightness(50%);
+}
+
+.box-btn button {
+    font-family: Catamaran-Bold;
+    font-size: 0.7rem;
+    background-color: #BF8697;
+    border: none;
+    padding: 0.8rem;
+    box-shadow: 2px 4px 5px #22162B;
+    display: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+/*Used flex to position button on images*/
+.box:hover button {
+    display: flex;
+}
+
+.box-btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: 0.5s ease;   
+}
+
+/**********************CONTACT******************/
+/*Heading of the container*/
+.container h3 {
+    font-family: Satisfy;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/*Form and its features*/
+.form {
+    background-color: #EFCED8;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 80%;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-family: Catamaran-Bold;
+    color: #22162B;
+    margin-left: 2.5rem;
+}
+
+/*Changes made in each input*/
+input[type=text],
+input[type=tel],
+textarea[name=message] {
+    width: 100%;
+    padding: 0.3rem;
+    font-family: Catamaran-Thin;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+input[type=submit] {
+    width: 40%;
+    padding: 8px 2px;
+    font-family: Catamaran-Bold;
+    border: none;
+    font-size: 2rem;
+    background-color: #BF8697;
+    color: #22162B;
+    cursor: pointer;
+}
+
+/*Table and its adjustment*/
+.table {
+    font-family: Catamaran-Thin;
+    font-size: 1.3rem;
+}
+
+.table tr,
+.table td,
+.table th {
+    border: 5px solid #BF8697;
+    padding: 0.5rem;
+}
+
+th {
+    font-family: Catamaran-Bold;
+}
+
+td:nth-child(1) {
+    font-family: Catamaran-Bold;
+}
+
+/*Resized images and heading*/
+.circle-img img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.circle-img h4 {
+    font-family: Catamaran-Bold;
+    font-size: 1.2rem;
+}
+
+/*Google map location size*/
+iframe {
+    width: 100%;
+}
+
+/*Contact details and its changes*/
+.contact-details button {
+    font-family: Catamaran-Bold;
+    font-size: 1.2rem;
+    background-color: #BF8697;
+    border: none;
+    padding: 10px 40px;
+    box-shadow: 2px 4px 5px #22162B;
+    border-radius: 0px;
+}
+
+.contact-details i {
+    color: #BF8697;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-details p {
+    font-family: Catamaran-Bold;
+    padding: 0rem;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+}
+
+/*******************MEDIA QUERIES********************/
+/*To make carousel-caption responsive*/
+@media only screen and (min-width: 568px) {
+    .carousel-caption {
+        bottom: 13%;
+    }
+}
+
+@media only screen and (min-width: 598px) {
+    .carousel-caption {
+        bottom: 15%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 698px) {
+    .carousel-caption {
+        bottom: 15%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/***********************TABLET VIEW*********************/
+@media only screen and (min-width: 768px) {
+    /*Resized the logo image*/
+    .navbar-brand img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .navbar-nav {
+        background-color: transparent; 
+    }
+
+    /*Slideshow and its changes made*/
+    .carousel-caption {
+        bottom: 18%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3.5rem;
+    }
+
+    /*Changes made on texts of container*/
+    .container h1 {
+        font-size: 3.3rem;
+    }
+    
+    .container h2 {
+        font-size: 2.2rem;
+    }
+    
+    .container p {
+        font-size: 1.2rem;
+    }
+
+    .container section img {
+        max-width: 450px;
+        height: auto;
+    }
+
+    /*Footer and displayed nav links from tablet view*/
+    footer nav {
+        display: block;
+    }
+
+    footer .navbar-nav {
+        font-size: 1rem; 
+    }
+
+    .f-logo img {
+        width: 300px;
+        height: auto;
+    }
+
+    /*Contact details displayyed from tablet view*/
+    .details {
+        display: block;
+        font-family: Catamaran-Bold;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 1rem;
+    } 
+
+    /*Back to top button*/
+    .top {
+        bottom: 100px;
+        right: 10px;
+    }
+
+    /************************PORTFOLIO*********************/
+    /*Adjusted the font size of captions*/
+    .container .caption p {
+        font-size: 1.8rem;
+    }
+
+    /*************************SERVICES*********************/
+    /*Resized images*/
+    .wrapper img {
+        max-width: 450px;
+        height: auto;
+    }
+
+    .box img {
+        width: 90%;
+        height: auto;
+    }
+
+    /**************************CONTACT********************/
+    /*Resized form and icons*/
+    .form {
+        padding: 1.5rem;
+        width: 70%;
+        margin-left: 6.5rem;
+    }
+
+    .contact-details i {
+        margin-left: 6rem;
+    }     
+}
+
+/*******************MEDIA QUERIES********************/
+/*To make carousel-caption responsive*/
+@media only screen and (min-width: 798px) {
+    .carousel-caption {
+        bottom: 20%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 890px) {
+    .carousel-caption {
+        bottom: 20%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/***********************DESKTOP VIEW************************/
+@media only screen and (min-width: 992px) {
+    /*Resized the logo image*/
+    .navbar-brand img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    /*Few changes made in slideshow features*/
+    .carousel-caption {
+        bottom: 25%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 5.5rem;
+    }
+
+    .carousel-caption button {
+        font-size: 1.2rem;
+    }
+
+    .carousel-inner {
+        height: 700px;
+    }
+
+    /*Container and its adjustments made*/
+    .container h1 {
+        font-size: 4rem;
+    }
+    
+    .container p {
+        line-height: 2rem;
+    }
+    
+    .container section img {
+        max-width: 550px;
+        height: auto;
+    }
+
+    /*Adjustment made along with other texts*/
+    footer {
+        padding-left: 6rem;
+    }
+
+    /*Back to top button*/
+    .top {
+        bottom: 20px;
+        right: 10px;
+    }
+
+    /************************PORTFOLIO*********************/
+    /*Few changes made in container*/
+    .container button {
+        font-size: 1.2rem;
+    }
+
+    .container .caption p {
+        font-size: 2.3rem;
+    }
+
+    /***************************SERVICES****************/
+    /*Few changes made on texts and images*/
+    .overlay-text h4 {
+        font-size: 2rem;
+    }
+
+    .wrapper img {
+        max-width: 550px;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .wrapper p {
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-btn button {
+        font-size: 0.9rem;
+        padding: 0.9rem;
+    }
+
+    /****************************CONTACT************************/
+    /*Few changes made in heading, form and map*/
+    .container h3 {
+        text-align: left;
+        margin-bottom: -2rem;
+    }
+    
+    .form {
+        margin-left: 0;
+        width: 20%;
+        margin-top: 4rem;
+    }
+
+    /*Resized image and heading*/
+    .circle-img img {
+        width: 90px;
+        height: auto;
+        margin-top: 1rem;
+    }
+    
+    .circle-img h4 {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }  
+
+    /*Resized google map*/
+    iframe {
+        width: 85%;
+    }
+
+    /*Changes made in contact-details*/
+    .contact-details {
+        margin-top: 8rem;
+    }
+    
+    .contact-details button {
+        font-size: 1.5rem;
+    }
+
+    .contact-details h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-details p {
+        padding: 0rem;
+        margin-top: 2.2rem;
+    }
+}
+
+/*******************MEDIA QUERIES********************/
+/*To make carousel-caption responsive*/
+@media only screen and (min-width: 1190px) {
+    .carousel-caption {
+        bottom: 40%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 6.3rem;
+    }
+}
+
+@media only screen and (min-width: 1290px) {
+    .carousel-caption {
+        bottom: 41%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 7rem;
+    }
+}
