@@ -45,7 +45,7 @@ html {
 }
 
 .carousel-caption {
-    bottom: 10%;
+    top: 30%;
 }
 
 .carousel-caption h1 {
@@ -61,7 +61,6 @@ html {
     background-color: #BF8697;
     border: none;
     padding: 0.5rem;
-    margin-top: 1rem;
     border-radius: 10px;
     box-shadow: 2px 4px 5px #22162B;
     cursor: pointer;
@@ -680,7 +679,7 @@ iframe {
 /*To make carousel-caption responsive*/
 @media only screen and (min-width: 1190px) {
     .carousel-caption {
-        bottom: 40%;
+        bottom: 45%;
     }
 
     .carousel-caption h1 {
@@ -690,7 +689,7 @@ iframe {
 
 @media only screen and (min-width: 1290px) {
     .carousel-caption {
-        bottom: 41%;
+        bottom: 55%;
     }
 
     .carousel-caption h1 {
